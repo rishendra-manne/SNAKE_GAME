@@ -84,7 +84,7 @@ class Scoreboard(Turtle):
         self.hideturtle()
         self.update_turtle()
     def update_turtle(self):
-        self.write(f"score:{self.score} Highscore :{high_score}",align="center",font=("Arial",21,"normal"))
+        self.write(f"score:{self.score} Highscore :{self.high_score}",align="center",font=("Arial",21,"normal"))
     def reset(self):
         if self.score>self.high_score:
             self.high_score=self.score
